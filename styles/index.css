@@ -1,8 +1,18 @@
-.body {
+body {
     background-color: lightblue;
 }
 
-.h1 {
+h1 {
     color: navy;
     margin-left: 20px;
+}
+
+.red {
+   color: red;
+}
+.thick {
+   font-size:20px;
+}
+.green {
+   color:green;
 }
