@@ -1,18 +1,47 @@
-body {
-    background-color: lightblue;
+div {
+  display: inline-block;
+  position: relative;
 }
-
-h1 {
-    color: navy;
-    margin-left: 20px;
+input[type=radio] + label:hover{
+  background-color:;
+  border:1px solid #000000;
 }
-
-.red {
-   color: red;
+input[type=radio] + label {
+ display:inline-block;
+ width: 95%;
+ padding: 10px;
+ border: 1px  solid #ddd;
+ width: 15%; 
+ text-align: center;
+ text-overflow: ellipsis;
+ overflow: auto;
+ margin-bottom: 10px;
+ cursor:　pointer;
 }
-.thick {
-   font-size:20px;
+input[type="radio"]:checked + label {
+  background: black;
+  border-color: white;
+  color: white;
 }
-.green {
-   color:green;
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+  visibility: hidden;
+}
+button {
+ display:inline-block;
+ width: 95%;
+ padding: 10px;
+ border: 1px  solid #ddd;
+ width: 15%; 
+ text-align: center;
+ text-overflow: ellipsis;
+ overflow: auto;
+ margin-bottom: 10px;
+ margin-top: -15px;
+ margin-left: 60%;
+ cursor:　pointer;
+  background-color: white
 }
