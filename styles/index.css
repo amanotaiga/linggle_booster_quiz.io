@@ -17,6 +17,7 @@ input[type=radio] + label {
  overflow: auto;
  margin-bottom: 10px;
  cursor:　pointer;
+ color: black;
 }
 input[type="radio"]:checked + label {
   background: black;
@@ -43,5 +44,5 @@ button {
  margin-top: -15px;
  margin-left: 60%;
  cursor:　pointer;
-  background-color: white
+ background: white
 }

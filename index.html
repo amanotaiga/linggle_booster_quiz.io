@@ -1,113 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <link rel="stylesheet" type="text/css" href="styles/index.css">
-<script src="index.js" type="text/javascript"></script>
-
+<script type="text/javascript" src="js/index.js" ></script>
 </head>
 <body>
-<p>I'm hosted with GitHub Pages.</p>
-<ul>
-  <li>
-  <p id="demo">show value</p>
-    <p id="testing">show func value</p>
-		<h3>In a hospital, for example, a certain roon is set aside for [____] purpose.</h3>
-		<input type="radio" name="question0" id = pickup-1 value="1">
-    <label for=pickup-1 class= ans0>democratic</label><br>
-		<input type="radio" name="question0" id = pickup-2 value="2">
-    <label for=pickup-2 class= ans0>specific</label><br>
-		<input type="radio" name="question0" id = pickup-3 value="3">
-    <label for=pickup-3 class= ans0>domestic</label><br>
-		<input type="radio" name="question0" id = pickup-4 value="4">
-    <label for=pickup-4 class= ans0>economic</label><br>
-
- </li>
-<li>
-		<h3>But the solution is n't to ignore the [_____] of scientific advances that will close that gap .</h3>
-		<input type="radio" name="question1" id = pickup-5 value="1">
-		<label for=pickup-5 class= ans1>possibility</label><br>
-		<input type="radio" name="question1" id = pickup-6 value="2">
-		<label for=pickup-6 class= ans1>translocate</label><br>
-		<input type="radio" name="question1" id = pickup-7 value="3">
-		<label for=pickup-7 class= ans1>participate</label><br>
-		<input type="radio" name="question1" id = pickup-8 value="4">
-		<label for=pickup-8 class= ans1>demonstrate</label><br>
- </li>
-</ul>
-
-<button onclick="returnScore()">View Results</button>
-<button onclick="Clear()">Clear</button>
-
-<!-->
-<script>
-var answers = ["2","1"], 
-    tot = answers.length;
-var valList = [];
-var test = 0;
-
-function getCheckedValue( radioName ){
-    var radios = document.getElementsByName( radioName ); // Get radio group by-name
-    for(var y=0; y<radios.length; y++){
-      radios[y].disabled = true;
-      if(radios[y].checked){
-        checkedValue = radios[y].value; // return the checked value
-       }
-    }
-    return checkedValue; // return the checked value
-}
-
-function Clear(){
-  var radios;
-  var ans;
-    for (var i=0; i<tot; i++){
-        ans = document.querySelectorAll(".ans"+i);
-       radios = document.getElementsByName("question"+i);
-     for(var y=0; y<radios.length; y++){
-      radios[y].disabled = false;
-    }
-     for(var j=0; j<ans.length; j++){
-      ans[j].style.backgroundColor = "transparent";
-      ans[j].style.color = "black"; 
-    }     
-   }
-}
-function getScore(){
-  var score = 0;
-  for (var i=0; i<tot; i++){
-      Checkedval = getCheckedValue("question"+i);
-    if(Checkedval===answers[i]){   
-       score += 1; // increment only 
-       valList[i] = Checkedval;
-    }
-    else{
-        valList[i] = Checkedval;     
-    }
-  }
-  return score;
-}
-
-function returnScore(){
-  score = getScore();
-  alert("Your score is "+ score +"/"+ tot);
-    var i;
-    for (i = 0; i < tot; i++) {
-          var y = document.querySelectorAll(".ans"+i);
-         //document.getElementById("demo").innerHTML = valList[0];
-         //document.getElementById("testing").innerHTML = answers[0];
-        if(valList[i] !== answers[i]){
-           y[valList[i]-1].style.backgroundColor = "red"; 
-           y[answers[i]-1].style.backgroundColor = "#0C0";
-          　y[answers[i]-1].style.color = "white"; 
-        }
-      else{
-          y[answers[i]-1].style.backgroundColor = "#0C0";    
-          y[answers[i]-1].style.color = "white"; 
-      }      
-    } 
-}
-
-</script>
-<-->
+	<ul>
+		<li>
+			<h3>One would expect such a consensus to be backed up by an _____ array of evidence .</h3>
+			<input type ="radio" name ="question0" id = pickup-1 value="1">
+			<label for=pickup-1 class = ans0>collective</label><br>
+			<input type ="radio" name ="question0" id = pickup-2 value="2">
+			<label for=pickup-2 class = ans0>impressive</label><br>
+			<input type ="radio" name ="question0" id = pickup-3 value="3">
+			<label for=pickup-3 class = ans0>cognitive</label><br>
+			<input type ="radio" name ="question0" id = pickup-4 value="4">
+			<label for=pickup-4 class = ans0>offensive</label><br>
+		</li>
+		<li>
+			<h3>I have learned a great deal from all that I have heard in the _____ few days .</h3>
+			<input type ="radio" name ="question1" id = pickup-5 value="1">
+			<label for=pickup-5 class = ans1>high</label><br>
+			<input type ="radio" name ="question1" id = pickup-6 value="2">
+			<label for=pickup-6 class = ans1>much</label><br>
+			<input type ="radio" name ="question1" id = pickup-7 value="3">
+			<label for=pickup-7 class = ans1>last</label><br>
+			<input type ="radio" name ="question1" id = pickup-8 value="4">
+			<label for=pickup-8 class = ans1>most</label><br>
+		</li>
+		<li>
+			<h3>And it certainly takes an expert in roads to deal with this country 's _____ topography and climate .</h3>
+			<input type ="radio" name ="question2" id = pickup-9 value="1">
+			<label for=pickup-9 class = ans2>varied</label><br>
+			<input type ="radio" name ="question2" id = pickup-10 value="2">
+			<label for=pickup-10 class = ans2>tricky</label><br>
+			<input type ="radio" name ="question2" id = pickup-11 value="3">
+			<label for=pickup-11 class = ans2>squint</label><br>
+			<input type ="radio" name ="question2" id = pickup-12 value="4">
+			<label for=pickup-12 class = ans2>racist</label><br>
+		</li>
+	</ul>
+	<button onclick="returnScore()">Submit</button>
 </body>
 </html>
