@@ -1,10 +1,9 @@
 var clozeAnswers = ["impressive"],
 clozeTot = clozeAnswers.length;
 var clozeValList = [];
-var answers = ["4","4","4","1"],
+var answers = ["2","3","3"],
 tot = answers.length;
-
-var valList = [];
+    var valList = [];
 function getCheckedValue( radioName ){
     var radios = document.getElementsByName( radioName ); // Get radio group by-name
     for(var y=0; y<radios.length; y++){
@@ -102,6 +101,6 @@ function returnScore(){
           y[answers[i]-1].style.backgroundColor = "#0C0";         
       }      
     } 
-  //return score1
+  return score1
 }
     
